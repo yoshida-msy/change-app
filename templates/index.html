@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>請求書処理ツール</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>請求書PDF → Excel変換</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdfs" multiple>
+        <br>
+        <button type="submit">変換する</button>
+    </form>
+
+</body>
+</html>
